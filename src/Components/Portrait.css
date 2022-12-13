@@ -1,0 +1,15 @@
+.portrait-container {
+  position: relative;
+}
+
+.portrait-container h1 {
+  bottom: 12rem;
+  color: white;
+  right: 15rem;
+  position: relative;
+}
+
+.portrait-container img {
+  border-radius: 25px;
+  box-shadow: 1px 1px 15px white;
+}

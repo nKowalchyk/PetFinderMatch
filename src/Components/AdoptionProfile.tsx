@@ -1,14 +1,16 @@
-import { Portrait } from './Portrait';
+import { PortraitList } from './PortraitList';
 import { Description } from './Description';
 
 import { PetFinderAnimalProfileResponse } from '../Types/Types';
 
-export const AdoptionProfile = ({ profileData }: { profileData: PetFinderAnimalProfileResponse }) => {
+export const AdoptionProfile = ({ profileData }: {
+  profileData: PetFinderAnimalProfileResponse
+}) => {
 
   return (
     <>
       {profileData && <>
-        <Portrait pictureUrl={profileData?.photos[0].full} />
+        <PortraitList photos={profileData.photos} />
         <Description
           name={profileData.name}
           age={profileData.age}

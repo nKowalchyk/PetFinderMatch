@@ -1,7 +1,7 @@
 export type PetFinderResponse = {
   animals: PetFinderAnimalProfileResponse[],
   pagination: {
-    counts_per_page: number,
+    count_per_page: number,
     total_count: number,
     current_page: number,
     total_pages: number,
@@ -81,13 +81,13 @@ export type PetFinderAnimalProfileResponse = {
   }
 };
 
-type Photo = {
+export type Photo = {
   small: string,
   medium: string,
   large: string,
   full: string
 };
 
-type Video = {
+export type Video = {
   embed: string
 };

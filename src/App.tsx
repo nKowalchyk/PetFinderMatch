@@ -1,11 +1,11 @@
-import { AdoptionProfile } from './components/AdoptionProfile';
+import { AdoptionProfileList } from './Components/AdoptionProfileList';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <AdoptionProfile />
+      <AdoptionProfileList />
     </div>
   );
 }
